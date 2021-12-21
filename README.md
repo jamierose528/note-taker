@@ -17,4 +17,4 @@ Email: jamie.rose.528@gmail.com
 ## Links
 
 https://github.com/jamierose528/note-taker
-https://jamierose528.github.io/note-taker/
+https://git.heroku.com/young-crag-73139.git
