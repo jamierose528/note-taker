@@ -3,10 +3,12 @@ const db = require("../db/db.json");
 const fs = require("fs");
 const uuid = require("../helpers/uuid");
 
+// load existing notes
 router.get("/api/notes", (req, res) => {
   res.json(db);
 });
 
+// add a note
 router.post("/api/notes", (req, res) => {
   req.body.id = uuid();
   db.push(req.body);
@@ -14,6 +16,7 @@ router.post("/api/notes", (req, res) => {
   res.json(db);
 });
 
+// delete a note
 router.delete(`/api/notes/:id`, (req, res) => {
   const id = req.params.id;
   for (let i = 0; i < db.length; i++) {
